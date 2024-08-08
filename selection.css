@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('download.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.boy{
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(2 px);
+    color: rgb(0, 0, 0);
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    position: fixed;
+}
+
+.boy h1{
+    margin: 0px ;
+    font-size: 50px;
+    width: 700px; 
+}
+.boy .button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.boy .button a:hover{
+    color: rgb(222, 228, 233);
+}
+
+.boy .btn{
+    padding: 30px;
+    width: 675px;
+    height: 200px;
+    margin: 20px ;
+    margin-left: -100px;  
+}
+
+.boy  .btn .button {
+  
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    margin:50px ;
+    display:inline ;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 46px;
+   
+}
+
+
+.back{
+    
+    margin-right: 1430px;
+    margin-bottom: 700px;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:431px){
+    .boy h1{
+        margin-top: -50px;
+        margin-bottom: 80px;
+        margin-left: 50px ;
+        font-size: 30px;
+        width: 700px;
+    }
+    .boy .btn{
+        width: 675px;
+        height: 200px;
+        margin-top: -100px;
+        margin-left: -40px;;
+    }
+    .boy .btn .button{
+        border: none;
+        background: transparent;
+        backdrop-filter: blur(2px);
+        margin-right: 60px;
+        display:inline ;
+        width: 1px;
+        border-radius: 20px;
+        font-size: 17px;
+        font-weight: 400;
+
+    }
+
+}
+
