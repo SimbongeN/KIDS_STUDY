@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style:none ;
+    padding: 0;
+}
+li{
+    display: inline;
+    float: left;
+}
+li a:hover{
+    background-color: rgb(80, 214, 214);
+    color: white;
+    transition: 0.5s;
+}
+.nav{
+    margin-top: -150px;
+    font-size: 16px;
+    float: left;
+    background: transparent;
+    position: relative;
+    margin-left: -5px;
+    margin-bottom: 690px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+}
+
+
+.nav li a {
+  
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+/*dropdown of math*/
+.nav ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 170px; 
+    
+   
+}
+.nav ul ul li {
+    display: block;
+   
+}
+.nav ul li a{
+    color: black;
+}
+.nav ul li ul li a{
+    color:rgb(96, 93, 93);
+    
+}
+.nav ul li ul li a:hover{
+    background-color: rgb(91, 213, 213);
+}
+
+
+.nav li:hover ul {
+    display: block;
+
+    
+}
+
+a{
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    
+}
+.active{
+    background-color: rgb(80, 214, 214);
+}
+/*end of navigation*/
+.active{
+    background-color: rgb(80, 214, 214);}
+
+body{
+   
+    min-height: 100vh;
+    background: url('download.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*-------------English Quiz-------------*/
+#startScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(6, 6, 6);
+    width: 200px;
+    font-family: 'Franklin Gothic Medium';
+    margin-left: 650px;
+   
+}
+h1{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 35px;
+}
+.btn {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    
+}
+button {
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button:hover {
+    background-color: #78ffb0;
+    box-shadow: 10px 10px 50px 5px rgb(101, 184, 34);
+    font-size: 17px;
+    transition: 0.4s;
+    
+}
+#questionScreen{
+    margin-top: 150px;
+    margin-left: 580px;
+    font-size: 16px;
+}
+
+#reviewList{
+    font-size: 14px;
+    margin-left: 550px;
+    display: flex;
+    flex-direction: column;
+}
+#options {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 70px;
+    margin-top: 50px;
+}
+#reviewScreen h2{
+    margin-left: 700px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size: 35px;
+    width: 500px;
+}
+@media screen and (max-width:431px){
+    #startScreen {
+        width: 200px;
+        font-family: 'Franklin Gothic Medium';
+       
+    }
+    h1{
+        font-size: 35px;
+    }
+    .btn {
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    button {
+        margin: 10px;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        background: transparent;
+        width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        border:none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button:hover {
+        background-color: #78ffb0;
+        box-shadow: 10px 10px 50px 5px rgb(101, 184, 34);
+        font-size: 17px;
+        transition: 0.4s;
+        
+    }
+    
+    #reviewList{
+        font-size: 14px;
+        margin-left: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    #options {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 630px;
+    }
+    #reviewScreen h2{
+        margin-left: 700px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        font-size: 35px;
+        width: 500px;
+    }
+
+
+
+
+
+
+
+}

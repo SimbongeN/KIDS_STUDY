@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="English.css">
+    <link rel="stylesheet" href="account.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>English For Kids</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a class="active" href="../Math/Math.html">Math</a>
+                <ul  class="animate__animated animate__slideInUp" >
+                    <li><a href="../Math/Mathquiz.html">Mixed Quizzes📝</a></li>
+                    <li><a href="../Math/LearnMultplication.html">Multiplication Tables</a></li>
+                    <li><a href="../Math/LearnAddition.html">Addition</a></li>
+                    <li><a href="../Math/LearnSubtraction.html">Substration</a></li>
+                </ul>
+            </li>
+            <li><a href="English.html">English</a></li>
+            <li><a href="../Science/Science.html">Science</a></li>
+        </ul>
+    </nav>
+
+<div id="startScreen">
+    <h1>English Quiz</h1>
+    <div class="btn">
+          <button id="startSynonymQuiz">Start Synonym Quiz</button>
+          <button id="startOppositeQuiz">Start Opposite Quiz</button>
+          <button id="startVerbNounQuiz">Start Verb & Noun Quiz</button>
+          <button id="startTenseQuiz">Start Tense Quiz</button>
+          <button id="startVoiceQuiz">Start Voice Quiz</button>
+    </div>
+</div>
+    <div id="questionScreen" style="display: none">
+        <h2 id="questionText"></h2>
+        <div id="options"></div>
+    </div>
+    <div id="reviewScreen" style="display: none">
+        <h2>Review</h2>
+        <ul id="reviewList"></ul>
+    </div>
+      <script src="engQuestions.js"></script>
+
+</body>
+</html>

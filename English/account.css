@@ -1,0 +1,16 @@
+.playerInfo {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 30%;
+    margin-top: 1%;
+    margin-left: 1%;
+
+    font-family: 'Franklin Gothic Medium';
+    font-size: large;
+}
+
+.playerInfo > ul > li {
+    width: 70%;
+}
