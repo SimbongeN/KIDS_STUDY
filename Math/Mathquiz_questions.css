@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+/*navigation*/
+ul{
+    list-style:none ;
+    padding: 0;
+}
+li{
+    display: inline;
+    float: left;
+}
+li a:hover{
+    background-color: rgb(80, 214, 214);
+    color: white;
+
+    transition: 0.7s;
+}
+.nav{
+    flex: 1;
+    font-size: 16px;
+    float: left;
+    background: transparent;
+    position: relative;
+    max-width: 300px;
+    margin-left: -5px;
+    margin-bottom: 690px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+}
+
+
+.nav li a {
+  
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+/*dropdown of math*/
+.nav ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 170px; 
+    
+   
+}
+.nav ul ul li {
+    display: block;
+   
+}
+.nav ul li a{
+    color: black;
+}
+.nav ul li ul li a{
+    color:rgb(96, 93, 93);
+    
+}
+.nav ul li ul li a:hover{
+    background-color: rgb(91, 213, 213);
+}
+
+
+.nav li:hover ul {
+    display: block;  
+}
+
+a{
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    
+}
+.active{
+    background-color: rgb(80, 214, 214);
+}
+/*end of navigation*/
+body{
+    display: flex;
+    background: url('download.jpg') no-repeat;
+    background-size: cover;
+    align-items: center;
+    background-position: center;
+    flex-direction: row;
+}
+.quiz {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(6, 6, 6);
+    max-width: 400px;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(171,219,227,0.5);
+    background-color: rgb(171,219,227,0.5);
+    box-shadow: 5px 5px 10px;
+    font-family: 'Franklin Gothic Medium';
+    margin-left: 100px;
+}
+.quiz h1 {
+    font-size: 35px;
+    margin-bottom:280px;
+
+}
+#Quize_Completed{
+    margin-top: -230px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-bottom: 2px solid;
+    border-top: 1px solid;
+    padding: 10px;
+    border-radius: 100px;
+    backdrop-filter: blur(27px);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.question {
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+.answer-input {
+    width: 100px;
+    margin-bottom: 70px;
+    font-size: 16px;
+    border: none;
+    border-bottom: solid black;
+    background-color: transparent;
+}
+button {
+    margin-top: -100px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #78ffb0;
+    box-shadow: 10px 10px 50px 5px rgb(101, 184, 34);
+    
+}
+#feedback {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.space-Div{
+    flex: 1;
+}
+@media screen and (max-width:630px){
+    .nav{
+        margin-left: -12px;
+    }
+    .animate__animated{
+        display: none;
+        visibility: hidden !important;
+    }
+
+    .quiz {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:rgb(6, 6, 6);
+        width: 300px;
+        border-radius: 10px;
+        font-family: 'Franklin Gothic Medium';
+        margin-left: -270px;
+        margin-top: -90px;
+    }
+    body{
+        height: 100%;
+    }
+}

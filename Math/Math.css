@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background: url('download.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/*navigation*/
+ul{
+    list-style:none ;
+    padding: 0;
+}
+li{
+    display: inline;
+    float: left;
+}
+li a:hover{
+    background-color: rgb(80, 214, 214);
+    color: white;
+    transition: 0.5s;
+}
+.nav{
+    flex: 1.5;
+    font-size: 16px;
+    float: left;
+    background: transparent;
+    position: relative;
+    max-width: 300px;
+    margin-left: -5px;
+    margin-bottom: 690px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+}
+
+
+.nav li a {
+  
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+/*dropdown of math*/
+.nav ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 170px; 
+}
+.nav ul ul li {
+    display: block;
+   
+}
+.nav ul li a{
+    color: black;
+}
+.nav ul li ul li a{
+    color:rgb(96, 93, 93);
+    
+}
+.nav ul li ul li a:hover{
+    background-color: rgb(91, 213, 213);
+}
+
+
+.nav li:hover ul {
+    display: block;
+
+    
+}
+
+a{
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    
+}
+.active{
+    background-color: rgb(80, 214, 214);
+}
+/*end of navigation*/
+
+
+
+
+#startScreen {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(6, 6, 6);
+    font-family: 'Franklin Gothic Medium';
+    background: transparent;
+    margin-left: -200px;
+}
+
+.btn {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+#startScreen h1{
+    width: 100%;
+}
+
+.btn button{
+    margin-bottom: 10px;
+    background: transparent;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.btn button:hover{
+    background-color: greenyellow;
+}
+
+@media only screen and (max-width: 630px) and (max-height: 700px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .nav{
+        flex: 0;
+        height: 0px;
+        margin: 0px;
+    }
+    .animate__animated{
+        display: none;
+        visibility: hidden !important;
+    }
+    #startScreen {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:rgb(6, 6, 6);
+        font-family: 'Franklin Gothic Medium';
+        background: transparent;
+        margin-left: 0px;
+    }
+}

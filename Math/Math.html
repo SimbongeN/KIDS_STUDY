@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Math.css">
+    <link rel="stylesheet" href="../Science/account.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Math for Kids</title>
+    
+   
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a class="active" href="Math.html">Math</a>
+                <ul  class="animate__animated animate__slideInUp" >
+                    <li><a href="Mathquiz.html">Mixed Quizzes📝</a></li>
+                    <li><a href="LearnMultplication.html">Multiplication Tables</a></li>
+                    <li><a href="LearnAddition.html">Addition</a></li>
+                    <li><a href="LearnSubtraction.html">Substration</a></li>
+                </ul>
+            </li>
+            <li><a href="../English/English.html">English</a></li>
+            <li><a href="../Science/Science.html">Science</a></li>
+        </ul>
+    </nav>
+    <div id="startScreen">
+        <h2>Math Section</h2>
+        <div class="btn">
+              <button onclick="nextPage(1)">Test yourself Mixed Quizzes📝</button>
+              <button onclick="nextPage(2)">Multiplication Tables</button>
+              <button onclick="nextPage(3)">Learn Addition</button>
+              <button onclick="nextPage(0)">Learn Substration</button>
+        </div>
+    </div>
+    <script>
+        function nextPage(pageNo){
+            
+            if(pageNo===1){
+                window.location.href = "Mathquiz.html";
+            }else if(pageNo === 2){
+                window.location.href = "LearnMultplication.html";
+            }else if(pageNo===3){
+                window.location.href = "LearnAddition.html";
+            }else{
+                window.location.href = "LearnSubtraction.html";
+            }
+        }
+    </script>
+</body>
+</html>

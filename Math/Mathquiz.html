@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mathquiz.css">
+    <title>Math Quiz for Kids</title>
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+        <li>
+            <a class="active" href="Math.html">Math</a>
+            <ul  class="animate__animated animate__slideInUp" >
+                <li><a href="Mathquiz.html">Mixed Quizzes📝</a></li>
+                <li><a href="LearnMultplication.html">Multiplication Tables</a></li>
+                <li><a href="LearnAddition.html">Addition</a></li>
+                <li><a href="LearnSubtraction.html">Substration</a></li>
+                
+            </ul>
+        </li>
+        <li><a href="../English/English.html">English</a></li>
+        <li><a href="../Science/Science.html">Science</a></li>
+    </ul>
+</nav>
+
+      <div class="body">
+        <h1>Choose difficulty</h1>
+        <div class="buttons">
+            <button type="button" class="btn btn-secondary" value="easy" onclick="EasySelected()" >Easy</button>
+            <button type="button" class="btn btn-secondary" value="medium" onclick="MediumSelected()" >Medium</button>
+            <button type="button" class="btn btn-secondary" value="hard" onclick="HardSelected()" >Hard</button>
+        </div>
+        <div id="display"></div></div>
+    <script>
+        function EasySelected(){
+            const difficultyChoosen = "easy";
+            localStorage.setItem('difficulty',difficultyChoosen);
+            window.location.href = "Mathquiz_questions.html";
+        }
+
+        function MediumSelected(){
+            const difficultyChoosen = "medium";
+            localStorage.setItem('difficulty',difficultyChoosen);
+            window.location.href = "Mathquiz_questions.html";
+        }
+
+        function HardSelected(){
+            const difficultyChoosen = "hard";
+            localStorage.setItem('difficulty',difficultyChoosen);
+            window.location.href = "Mathquiz_questions.html";
+        }
+    </script>
+   
+</body>
+</html>
