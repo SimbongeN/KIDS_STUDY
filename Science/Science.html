@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Science.css" />
+    <link rel="stylesheet" href="account.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Science for Kids</title>
+    
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+          <li>
+              <a class="active" href="../Math/Math.html">Math</a>
+              <ul  class="animate__animated animate__slideInUp" >
+                  <li><a href="../Math/Mathquiz.html">Mixed Quizzes📝</a></li>
+                  <li><a href="../Math/LearnMultplication.html">Multiplication Tables</a></li>
+                  <li><a href="../Math/LearnAddition.html">Addition</a></li>
+                  <li><a href="../Math/LearnSubtraction.html">Substration</a></li>
+              </ul>
+          </li>
+          <li><a href="../English/English.html">English</a></li>
+          <li><a href="Science.html">Science</a></li>
+      </ul>
+  </nav>
+
+    <div class="playerInfo">
+      <ul class="playerDetails">
+        <li id="name_surname">Name & Surname</li>
+        <li id="life_points">💖💖💖</li>
+        <li id="total_points">Total Points</li>
+      </ul>
+      <button onclick="showInfo()" style="width: 35%;">🔃</button>
+    </div>
+    
+    <div>
+      <div class="quiz" id="quiz">
+        <h1>Science Quiz</h1>
+        <p id="question_num">1</p>
+        <p id="question"></p>
+        <div class="button">
+          <button onclick="handleAnswer()" id="ans_1">Answer 1</button><br />
+          <button onclick="handleAnswer()" id="ans_2">Answer 2</button><br />
+          <button onclick="handleAnswer()" id="ans_3">Answer 3</button><br />
+        </div>
+        
+        <div class="score">Score <span id="score">0</span></div>
+      </div>
+      <div class="explaination" id="explanation">
+        <h2 id="answer_state"></h2>
+        <p id="explanation_content">{question.brief}</p>
+        <button class="animate__animated animate__backInLeft" onclick="NextQuestion()">Next   >></button>
+      </div>
+    <script src="science_questions.js"></script>
+    <script src="player_account.js"></script>
+  </body>
+</html>
